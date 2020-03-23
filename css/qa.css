@@ -3,6 +3,7 @@
 .bg-text {
     color: #ffffff;
     background-color: unset;
+    padding: 31px 60px 23px 230px;
 }
 .current-about a{
     border-bottom: unset;
@@ -115,6 +116,7 @@
 @media (max-width: 600px) {
     .bg-text {
         text-align: center;
+        padding: 0;
     }
     .current-qa a{
         border-bottom: unset;
