@@ -270,10 +270,6 @@ footer p {
         flex-direction: column-reverse;
         margin-bottom: 50px;
     }
-    .main-msg-left,
-    .main-msg-right {
-        width: 100%;
-    }
     .main-msg-right {
         font-size: 14px;
         line-height: 35px;

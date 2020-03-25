@@ -25,7 +25,6 @@ footer .current-news a{
 }
 #home {
     background-image: url(../images/AdobeStock_295587079@2x.png);
-    min-height: 100vh;
 }
 
 @media (max-width: 600px) {
