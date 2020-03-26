@@ -1,0 +1,125 @@
+@charset "UTF-8";
+
+.bg-text {
+    color: #ffffff;
+    background-color: unset;
+    padding: 31px 60px 23px 230px;
+}
+.current-about a{
+    border-bottom: unset;
+    opacity: 0.5;
+}
+.current-qa a{
+    border-bottom: 2px solid #3E3E3E;
+    opacity: 1;
+}
+#home {
+    background-image: url(../images/AdobeStock_255730246@2x.png);
+}
+/*アコーディオン全体*/
+.menu {
+    width: 624px;
+    margin: 0 auto;
+    text-align: left;
+    margin-bottom: 300px;
+  }
+  .menu input {
+    /*チェックボックスを隠す*/
+    display: none;
+  }
+  /*バー部分*/
+  .menu label {
+    cursor :pointer;
+    display: block;
+    text-decoration: none;
+    color: #4D4B47;
+    line-height: 1;
+    position: relative;
+    margin: 0 0 10px;
+    background-color: #FCFCFC;
+    font: 600 18px/34px "Noto Sans JP";
+  }
+  /*開いたときに表示される部分*/
+  .menu ul {
+    list-style: none;
+    margin-bottom: 60px;
+  }
+  .menu li {
+    max-height: 0;
+    overflow-y: hidden;
+    transition: all 0.5s;/*閉じるときのアニメーション*/
+  }
+  #menu_bar01:checked ~ #links01 li,
+  #menu_bar02:checked ~ #links02 li,
+  #menu_bar03:checked ~ #links03 li,
+  #menu_bar04:checked ~ #links04 li {
+    max-height: 30px; /*開いたときに表示されるliの高さ*/
+    transition: all 0.5s;/*開くときのアニメーション*/
+  }
+   /*開いたときの下の余白*/
+  #menu_bar01:checked ~ #links01 li:last-child,
+  #menu_bar02:checked ~ #links02 li:last-child,
+  #menu_bar03:checked ~ #links03 li:last-child,
+  #menu_bar04:checked ~ #links04 li:last-child {
+    margin-bottom: 20px;
+  }
+  /*閉じた状態の矢印描画*/
+  .menu label:after{
+    content:"";
+    display:block;
+    width:15px;
+    height:15px;
+    border-top: #A09D98 2px solid;
+    border-right: #A09D98 2px solid;
+    -webkit-transform: rotate(135deg);
+    -ms-transform: rotate(135deg);
+    transform: rotate(135deg);
+    position:absolute;
+    right: 2%;
+    top: 0;
+    bottom: 15%;
+    margin:auto;
+    border-width: 5px;
+  }
+  /*開いた状態の矢印描画*/
+  .menu input[type=checkbox]:checked + label:after{
+    content:"";
+    display:block;
+    width:15px;
+    height:15px;
+    border-top: #A09D98 2px solid;
+    border-right: #A09D98 2px solid;
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    position:absolute;
+    right: 2%;
+    top: 7%;
+    bottom: 0;
+    margin:auto;
+    border-width: 5px;
+  }
+
+@media (max-width: 600px) {
+    .bg-text {
+      text-align: center;
+      padding: 0;
+      top: 150px;
+    }
+    .current-qa a{
+        border-bottom: unset;
+    }
+    .menu {
+        width: 90%;
+        margin-bottom: 200px;
+    }
+    .menu ul {
+        margin-bottom: 32px;
+    }
+    .menu label {
+        font-size: 15px;
+    }
+    .menu ul li {
+        font-size: 12px;;
+    }
+}
