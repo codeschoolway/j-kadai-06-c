@@ -9,6 +9,7 @@ body {
 }
 a {
     text-decoration: none;
+    color: #3B3B3B;
 }
 img {
     max-width: 100%;
@@ -68,11 +69,10 @@ header h1 a{
 .bg-text{
     font-weight: lighter;
     font-size: 60px;
-    font-family: 'Noto Sans';
+    font-family: "Noto Sans";
     color: #918F89;
     width: 750px;
     top:354px;
-    text-align: left;
     padding:31px 60px 23px 88px;
     position: relative;
     background-color: #ffff;
@@ -128,8 +128,6 @@ h3 {
 .overlay {
     position: absolute;
     bottom: 0;
-    left: 0;
-    right: 0;
     background-color: #00000095;
     overflow: hidden;
     width: 100%;
@@ -172,7 +170,6 @@ input[type="email"],
 textarea {
     border: 0.5px solid #707070;
     border-radius: 11px;
-    opacity: 0.6;
     height: 35px;    
     padding: 10px;
     font-size: 1rem;
@@ -202,15 +199,17 @@ footer {
     background: #918F89;
     padding: 116px 0 0 0;
 }
+footer a,
+footer .nav-main a,
+footer .nav-main a:hover,
+footer p {
+    color: #ffffff;
+}
 .foot-logo {
     text-align: center;
     font-size: 16px;
     line-height: 1.1;
-    margin-top: 0;
     padding: 0;
-}
-.foot-logo a{
-    color: #ffffff;
 }
 footer .page-header {
     max-width: 65%;
@@ -219,19 +218,12 @@ footer .nav-main {
     margin-top: 0;
 }
 footer .nav-main a{
-    color: #ffffff;
-    padding-bottom: 0;
     opacity: 1;
-}
-footer .nav-main a:hover {    
-    border-bottom: none;
-    color: #ffffff;
 }
 footer p {
     padding: 59px 0 35px;
     text-align: center;
     font-size: 10px;
-    color: #ffffff;
 }
 
 /* ************************************************************************************ */
